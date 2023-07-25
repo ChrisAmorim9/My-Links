@@ -29,3 +29,8 @@ body* {
   width: 112px;
   
 }
+
+#user {
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
