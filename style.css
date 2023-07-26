@@ -4,11 +4,11 @@ body {
   background-position: top center;
   background-size: cover; */
   /* Background: color image repeat          position/ size */
-  background: url(./assets/assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: url(./assets/assets/bg-galaxia.jpg) no-repeat top center/cover;
 }
 
 body* {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: white;
 }
 
@@ -25,12 +25,10 @@ body* {
 }
 
 #profile img {
-  
   width: 112px;
-  
 }
 
-#user {
+#insta-user {
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Bungee Spice", cursive;
 }
