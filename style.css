@@ -13,7 +13,8 @@ body {
 
   /* O margin é o espaço entre um elemento e seus vizinhos, enquanto o padding é o espaço entre o conteúdo do elemento e sua borda */
 
-  background: url(./assets/assets/bg-galaxia.jpg) no-repeat top center/cover;
+  /* background: url(./assets/assets/bg-galaxia.jpg) no-repeat top center/cover; */
+  background: url(./assets/assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
 body * {
@@ -23,7 +24,10 @@ body * {
 
 #container {
   width: 360px;
+  height: 712px;
   margin: 25px auto 0px;
+  padding: 0 24px;
+  /* border: 1px solid red; */
 }
 
 #profile {
@@ -32,11 +36,44 @@ body * {
 }
 
 #profile img {
-  width: 112px;
+  width: 140px;
 }
 
 profile p {
   line-height: 24px;
   font-weight: 500;
   margin: top 8px;
+}
+
+/* links */
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 52px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition:background 0.4s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
 }
