@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/assets/bg-mobile.jpg)
+}
+
+.light {
+  --text-color:black;
+  --bg-url: url(assets/assets/bg-mobile-light.jpg)
+}
+
 body {
   /* background-image: url(./assets/assets/ bg-mobile.jpg);
   background-repeat: no-repeat;
@@ -14,12 +24,12 @@ body {
   /* O margin é o espaço entre um elemento e seus vizinhos, enquanto o padding é o espaço entre o conteúdo do elemento e sua borda */
 
   /* background: url(./assets/assets/bg-galaxia.jpg) no-repeat top center/cover; */
-  background: url(./assets/assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
   font-family: "Inter", sans-serif;
-  color: white;
+  color:var(--text-color);
 }
 
 #container {
@@ -77,7 +87,7 @@ ul li a {
 
 ul li a:hover {
   background: rgba(255, 255, 255, 0.5);
-  border: 1px solid white;
+  border: 1px solid var(--text-color);
 }
 
 /* social links */
@@ -95,7 +105,7 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  transition: background 0.2s ;
+  transition: background 0.2s;
   border-radius: 50%;
 }
 
