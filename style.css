@@ -84,11 +84,14 @@ profile p {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  border: 1px solid var(--stroke-color);
+  
 }
 
 .light #switch button {
   right: 0;
   left: initial;
+  border: 1px solid var(--stroke-color);
 }
 
 #switch span {
