@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(assets/assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -35,6 +35,7 @@ body {
 
   /* background: url(./assets/assets/bg-galaxia.jpg) no-repeat top center/cover; */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -163,6 +164,17 @@ ul li a:hover {
 #social-links a:hover {
   background: var(--highlight-color);
   padding: 16px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
 
 
